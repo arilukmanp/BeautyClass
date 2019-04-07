@@ -12,11 +12,12 @@
 
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="sensorPortrait"></activity>
+            android:theme="@style/MenuTheme"
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".ForgotPasswordActivity"
             android:label="Reset Password"
-            android:screenOrientation="sensorPortrait"
+            android:screenOrientation="portrait"
             android:parentActivityName=".LoginActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -24,11 +25,11 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:screenOrientation="sensorPortrait"
+            android:screenOrientation="portrait"
             android:theme="@style/AppNoActionBar"></activity>
         <activity
             android:name=".SplashScreen"
-            android:screenOrientation="sensorPortrait"
+            android:screenOrientation="portrait"
             android:theme="@style/AppFullScreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
