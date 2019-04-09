@@ -90,11 +90,13 @@
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:background="@drawable/btn_floating_card"
+                    android:clickable="true">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="27.5dp"
+                        android:layout_height="27.5dp"
                         android:src="@drawable/ic_note"/>
 
                     <TextView
@@ -117,11 +119,13 @@
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:background="@drawable/btn_floating_card"
+                    android:clickable="true">
 
                     <ImageView
-                        android:layout_width="28dp"
-                        android:layout_height="30dp"
+                        android:layout_width="26dp"
+                        android:layout_height="28dp"
                         android:src="@drawable/ic_profile" />
 
                     <TextView
@@ -144,12 +148,14 @@
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:background="@drawable/btn_floating_card"
+                    android:clickable="true">
 
                     <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/ic_chat" />
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_chat"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -193,7 +199,8 @@
                     android:paddingTop="15dp"
                     android:paddingRight="15dp"
                     android:paddingBottom="15dp"
-                    android:src="@drawable/ic_speaker" />
+                    android:src="@drawable/ic_speakers"
+                    android:clickable="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -213,11 +220,12 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
-                    android:paddingLeft="18dp"
-                    android:paddingTop="18dp"
-                    android:paddingRight="18dp"
-                    android:paddingBottom="18dp"
-                    android:src="@drawable/ic_schedule" />
+                    android:paddingLeft="19.2dp"
+                    android:paddingTop="19.2dp"
+                    android:paddingRight="19.2dp"
+                    android:paddingBottom="19.2dp"
+                    android:src="@drawable/ic_schedule"
+                    android:clickable="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -238,11 +246,12 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingBottom="15dp"
-                    android:src="@drawable/ic_participans" />
+                    android:paddingLeft="16.5dp"
+                    android:paddingTop="16.5dp"
+                    android:paddingRight="16.5dp"
+                    android:paddingBottom="16.5dp"
+                    android:src="@drawable/ic_participants"
+                    android:clickable="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -270,11 +279,12 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingBottom="15dp"
-                    android:src="@drawable/ic_gallery" />
+                    android:paddingLeft="17dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="17dp"
+                    android:paddingBottom="17dp"
+                    android:src="@drawable/ic_gallery"
+                    android:clickable="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -294,11 +304,12 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingBottom="15dp"
-                    android:src="@drawable/ic_download" />
+                    android:paddingLeft="19dp"
+                    android:paddingTop="19dp"
+                    android:paddingRight="19dp"
+                    android:paddingBottom="19dp"
+                    android:src="@drawable/ic_download"
+                    android:clickable="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -319,11 +330,12 @@
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingBottom="15dp"
-                    android:src="@drawable/ic_meals" />
+                    android:paddingLeft="17dp"
+                    android:paddingTop="17dp"
+                    android:paddingRight="17dp"
+                    android:paddingBottom="17dp"
+                    android:src="@drawable/ic_meals"
+                    android:clickable="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
