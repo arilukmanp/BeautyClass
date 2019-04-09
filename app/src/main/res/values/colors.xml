@@ -4,4 +4,20 @@
     <color name="colorPrimaryDark">#DE1660</color>
     <color name="colorLoginDark">#DBDBDB</color>
     <color name="colorAccent">#682D8F</color>
+    <color name="backgroundWhite">#FFFFFF</color>
+    <color name="backgroundGrey">#F6F6F6</color>
+
+    <item name="green" type="color">#73BA25</item>
+    <item name="pink" type="color">#F64699</item>
+    <item name="blue" type="color">#3E91EE</item>
+    <item name="yellow" type="color">#F9D02D</item>
+    <item name="orange" type="color">#FF8658</item>
+
+    <integer-array name="pickcolor">
+        <item>@color/green</item>
+        <item>@color/blue</item>
+        <item>@color/orange</item>
+        <item>@color/pink</item>
+        <item>@color/yellow</item>
+    </integer-array>
 </resources>

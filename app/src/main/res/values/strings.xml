@@ -4,4 +4,7 @@
     <string name="hint_email"><font size="13">example@beautyclass.com</font></string>
     <string name="hint_password"><font size="13">Type Your Password</font></string>
     <string name="hint_forgot_password"><font size="13">Type Your Email Address</font></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
