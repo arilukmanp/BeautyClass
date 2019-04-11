@@ -1,20 +1,32 @@
 package com.kreasi.beautyclass;
 
+import android.content.Intent;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.kreasi.beautyclass.View.ContentTemp;
+import com.kreasi.beautyclass.View.Gallery;
+import com.kreasi.beautyclass.View.Meals;
+import com.kreasi.beautyclass.View.Schedule;
+
 public class MainActivity extends AppCompatActivity {
+    ImageView mealsImg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,5 +47,13 @@ public class MainActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void setClick(View view) {
+
+        int id = view.getId();
+            Intent moveIntent = new Intent(MainActivity.this, ContentTemp.class);
+            moveIntent.putExtra("id",id);
+            getApplicationContext().startActivity(moveIntent);
     }
 }

@@ -6,9 +6,11 @@
     tools:context=".View.Gallery">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_gallery"
+        android:layout_margin="3dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:listitem="@layout/item_gallery" />
 
 </FrameLayout>

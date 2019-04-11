@@ -217,6 +217,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <ImageView
+                    android:id="@+id/schedule"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
@@ -225,7 +226,8 @@
                     android:paddingRight="19.2dp"
                     android:paddingBottom="19.2dp"
                     android:src="@drawable/ic_schedule"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="setClick"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -276,6 +278,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <ImageView
+                    android:id="@+id/gallery"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
@@ -284,7 +287,8 @@
                     android:paddingRight="17dp"
                     android:paddingBottom="17dp"
                     android:src="@drawable/ic_gallery"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="setClick"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -327,6 +331,7 @@
                 android:gravity="center">
 
                 <ImageView
+                    android:id="@+id/meals"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
@@ -335,7 +340,9 @@
                     android:paddingRight="17dp"
                     android:paddingBottom="17dp"
                     android:src="@drawable/ic_meals"
-                    android:clickable="true" />
+                    android:clickable="true"
+                    android:onClick="setClick"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
