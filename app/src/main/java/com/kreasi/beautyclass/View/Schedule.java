@@ -5,26 +5,22 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.kreasi.beautyclass.Data.MealsData;
-import com.kreasi.beautyclass.Data.ScheduleData;
-import com.kreasi.beautyclass.Model.MealsModel;
-import com.kreasi.beautyclass.Model.ScheduleModel;
-import com.kreasi.beautyclass.Presenter.MealsAdapter;
-import com.kreasi.beautyclass.Presenter.ScheduleAdapter;
+import com.kreasi.beautyclass.Data.AgendaData;
+import com.kreasi.beautyclass.Model.AgendaModel;
+import com.kreasi.beautyclass.Presenter.AgendaAdapter;
 import com.kreasi.beautyclass.R;
 
 import java.util.ArrayList;
 
 public class Schedule extends Fragment {
     private RecyclerView rvSchedule;
-    private ArrayList<ScheduleModel> listSchedule = new ArrayList<>();
+    private ArrayList<AgendaModel> listSchedule = new ArrayList<>();
 
     public Schedule() {
         // Required empty public constructor
@@ -46,11 +42,11 @@ public class Schedule extends Fragment {
         //rvCategory.setHasFixedSize(true);
 
 
-        listSchedule.addAll(ScheduleData.getSchedule());
+        listSchedule.addAll(AgendaData.getSchedule("Monday, 12 April 2019"));
         //RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity());
         rvSchedule.setLayoutManager(new LinearLayoutManager(getActivity()));
         rvSchedule.setItemAnimator(new DefaultItemAnimator());
-        ScheduleAdapter scheduleAdapter=new ScheduleAdapter(getActivity());
+        AgendaAdapter scheduleAdapter=new AgendaAdapter(getActivity());
 
         scheduleAdapter.setListSchedule(listSchedule);
         rvSchedule.setAdapter(scheduleAdapter);

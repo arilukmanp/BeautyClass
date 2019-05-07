@@ -1,8 +1,6 @@
 package com.kreasi.beautyclass;
 
 import android.content.Intent;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,9 +11,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.kreasi.beautyclass.View.ContentTemp;
-import com.kreasi.beautyclass.View.Gallery;
-import com.kreasi.beautyclass.View.Meals;
-import com.kreasi.beautyclass.View.Schedule;
+import com.kreasi.beautyclass.View.NewGallery;
 
 public class MainActivity extends AppCompatActivity {
     ImageView mealsImg;
@@ -52,8 +48,13 @@ public class MainActivity extends AppCompatActivity {
     public void setClick(View view) {
 
         int id = view.getId();
+        if (id==R.id.gallery){
+            Intent moveIntent = new Intent(MainActivity.this, NewGallery.class);
+            startActivity(moveIntent);
+        }else {
             Intent moveIntent = new Intent(MainActivity.this, ContentTemp.class);
-            moveIntent.putExtra("id",id);
+            moveIntent.putExtra("id", id);
             getApplicationContext().startActivity(moveIntent);
+        }
     }
 }

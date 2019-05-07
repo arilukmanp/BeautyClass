@@ -13,14 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".View.ImageViewer"></activity>
-        <activity android:name=".View.ContentTemp"
+        <activity android:name=".View.NewGallery"></activity>
+        <activity android:name=".View.ImageViewer" />
+        <activity
+            android:name=".View.ContentTemp"
             android:label="@string/Content"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />
         </activity>
+        <activity
+            android:name=".View.DetailAct"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"

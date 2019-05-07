@@ -25,8 +25,8 @@ public class ContentTemp extends AppCompatActivity {
 
     private void frameContent() {
         Bundle bundle = getIntent().getExtras();
-        if (bundle.getInt("id")== R.id.meals){
-            Meals meals = new Meals();
+        if (bundle.getInt("id")== R.id.promo){
+            Promo promo = new Promo();
 
             FragmentManager fragmentManager = getSupportFragmentManager();
 
@@ -34,7 +34,7 @@ public class ContentTemp extends AppCompatActivity {
 
                 FragmentTransaction ft = fragmentManager.beginTransaction();
 
-                ft.replace(R.id.frame, meals, Meals.class.getSimpleName());
+                ft.replace(R.id.frame, promo, Promo.class.getSimpleName());
                 ft.addToBackStack(null);
 
                 ft.commit();

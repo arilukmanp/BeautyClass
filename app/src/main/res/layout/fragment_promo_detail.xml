@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".View.DetailAct">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/close_button_spk"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/close_but"
+
+        />
+    <ScrollView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_promo"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="fitXY"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/name_Promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/titledesc"
+                    android:background="@drawable/back_meals"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_access_time_black_24dp"
+                        />
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Event Periode :"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date_promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/date"
+                    android:textSize="12sp"
+                    android:background="@drawable/back_meals"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/vendor"
+                        />
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Merchant :"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/vendor_detpromo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="30dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/app_name"
+                    android:background="@drawable/back_meals"
+                    android:textSize="12sp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_info_black_24dp"
+                        />
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description :"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/desc_promo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="30dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:textSize="12sp"
+                    android:text="@string/lorem1"
+                    android:background="@drawable/back_meals"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

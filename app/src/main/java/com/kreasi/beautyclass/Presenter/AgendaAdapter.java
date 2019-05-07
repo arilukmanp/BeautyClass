@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.kreasi.beautyclass.Model.ScheduleModel;
+import com.kreasi.beautyclass.Model.AgendaModel;
 import com.kreasi.beautyclass.R;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -20,34 +20,34 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.CategoryViewHolder> {
+public class AgendaAdapter extends RecyclerView.Adapter<AgendaAdapter.CategoryViewHolder> {
 
 
-    public ScheduleAdapter(Context context) {
+    public AgendaAdapter(Context context) {
         this.context = context;
     }
 
     private Context context;
 
-    public ArrayList<ScheduleModel> getListSchedule() {
+    public ArrayList<AgendaModel> getListSchedule() {
         return listSchedule;
     }
 
-    public void setListSchedule(ArrayList<ScheduleModel> listSchedule) {
+    public void setListSchedule(ArrayList<AgendaModel> listSchedule) {
         this.listSchedule = listSchedule;
     }
 
-    private ArrayList<ScheduleModel> listSchedule;
+    private ArrayList<AgendaModel> listSchedule;
 
     @NonNull
     @Override
-    public ScheduleAdapter.CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public AgendaAdapter.CategoryViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View itemSchedule = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.schedule_item,viewGroup,false);
         return new CategoryViewHolder(itemSchedule);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ScheduleAdapter.CategoryViewHolder categoryViewHolder, int i) {
+    public void onBindViewHolder(@NonNull AgendaAdapter.CategoryViewHolder categoryViewHolder, int i) {
         categoryViewHolder.tvName.setText(getListSchedule().get(i).getNameCourse());
         categoryViewHolder.tvPlace.setText(getListSchedule().get(i).getPlaceCourse());
         categoryViewHolder.tvTime.setText(getListSchedule().get(i).getTimeCourse());

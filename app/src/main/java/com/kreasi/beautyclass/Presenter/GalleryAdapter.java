@@ -43,7 +43,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.GridView
     public void onBindViewHolder(@NonNull GalleryAdapter.GridViewHolder gridViewHolder, int i) {
         Glide.with(context)
                 .load(getListGaleri().get(i).getImgUrl())
-                .apply(new RequestOptions().override(200,200))
+                .apply(new RequestOptions().override(500,500))
                 .into(gridViewHolder.imgGal);
     }
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preview Image"
+                    android:paddingStart="20dp"
+                    android:padding="10dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="14sp"/>
+                <ImageView
+                    android:id="@+id/prevImgCLS"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/close_but"
+                    android:layout_alignParentEnd="true"
+                    />
+                <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/imgPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/images"
+                android:layout_below="@id/prev"
+                android:scaleType="fitXY"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/imgPreview"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/downloadBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOWNLOAD"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

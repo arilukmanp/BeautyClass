@@ -8,10 +8,11 @@
     <color name="backgroundGrey">#F6F6F6</color>
 
     <item name="green" type="color">#73BA25</item>
-    <item name="pink" type="color">#F64699</item>
+    <item name="pink" type="color">#1AF64699</item>
     <item name="blue" type="color">#3E91EE</item>
-    <item name="yellow" type="color">#F9D02D</item>
+    <item name="yellow" type="color">#1AF9D02D</item>
     <item name="orange" type="color">#FF8658</item>
+    <item name="abu" type="color">#6D6C6C</item>
 
     <integer-array name="pickcolor">
         <item>@color/green</item>

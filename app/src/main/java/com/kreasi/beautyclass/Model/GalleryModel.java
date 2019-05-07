@@ -5,16 +5,28 @@ public class GalleryModel {
     private String imgUrl;
     private String idImg;
 
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    private String date;
+
     public GalleryModel(){
         this.imgName = getImgName();
         this.imgUrl = getImgUrl();
         this.idImg = getIdImg();
+        this.date = getDate();
     }
 
-    public GalleryModel(String nama,String url,String id){
+    public GalleryModel(String nama,String url,String id,String date){
         this.imgName = nama;
         this.imgUrl = url;
         this.idImg = id;
+        this.date = date;
     }
 
     public String getImgName() {

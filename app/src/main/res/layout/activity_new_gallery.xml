@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.ContentTemp">
+    android:layout_gravity="fill_horizontal"
+    tools:context=".View.NewGallery">
 
-    <!-- TODO: Update blank fragment layout -->
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_gallery"
         android:layout_margin="3dp"
@@ -13,5 +14,4 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/item_gallery" />
 
-
-</FrameLayout>
+</RelativeLayout>

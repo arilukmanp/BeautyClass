@@ -8,4 +8,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Content">Content</string>
+    <string name="lorem1">Phasellus egestas venenatis pharetra. Nunc laoreet, leo sit amet cursus varius, nisi neque interdum tortor, ac consectetur sapien dui nec dolor. In sodales laoreet ligula, sed dictum neque cursus nec. Sed at posuere tellus. Ut pharetra tristique justo id elementum. Ut pulvinar interdum dui sit amet feugiat. Aliquam egestas eget elit sit amet accumsan. In ornare odio pellentesque pellentesque feugiat. In et libero ac risus feugiat finibus. Proin ornare gravida justo, at venenatis felis bibendum at. In a bibendum turpis, at consectetur sapien. Nulla laoreet enim in mattis cursus. Integer cursus ullamcorper diam, non pulvinar orci faucibus vel.</string>
+    <string name="titledesc">Start your beauty from yourself</string>
+    <string name="merchan">Garnier</string>
+    <string name="date">Monday, 12 April 2019</string>
+    <string name="time">08.00</string>
+    <string name="judul_cover">Take First Day Special Moment of Event</string>
+    <string name="ket_belum_upload">Belum di upload</string>
+    <string name="title_activity_agenda_v2">AgendaV2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 </resources>
