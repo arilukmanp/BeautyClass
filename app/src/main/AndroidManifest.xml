@@ -13,7 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".View.NewGallery"></activity>
+        <activity
+            android:name=".View.AgendaTab"
+            android:label="@string/title_activity_agenda_tab"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".View.NewGallery" />
         <activity android:name=".View.ImageViewer" />
         <activity
             android:name=".View.ContentTemp"

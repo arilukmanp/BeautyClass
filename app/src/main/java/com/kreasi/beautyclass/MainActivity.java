@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.kreasi.beautyclass.View.AgendaTab;
 import com.kreasi.beautyclass.View.ContentTemp;
 import com.kreasi.beautyclass.View.NewGallery;
 
@@ -50,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
         int id = view.getId();
         if (id==R.id.gallery){
             Intent moveIntent = new Intent(MainActivity.this, NewGallery.class);
+            startActivity(moveIntent);
+        }if (id==R.id.schedule){
+            Intent moveIntent = new Intent(MainActivity.this, AgendaTab.class);
             startActivity(moveIntent);
         }else {
             Intent moveIntent = new Intent(MainActivity.this, ContentTemp.class);
