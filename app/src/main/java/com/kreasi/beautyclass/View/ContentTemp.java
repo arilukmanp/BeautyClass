@@ -1,5 +1,6 @@
 package com.kreasi.beautyclass.View;
 
+import android.provider.ContactsContract;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
@@ -64,6 +65,34 @@ public class ContentTemp extends AppCompatActivity {
                 FragmentTransaction ft = fragmentManager.beginTransaction();
 
                 ft.replace(R.id.frame, gallery, Gallery.class.getSimpleName());
+                ft.addToBackStack(null);
+
+                ft.commit();
+            }
+        }if (bundle.getInt("id") == R.id.profil){
+            UserProfile userProfile = new UserProfile();
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+
+            if (fragmentManager != null) {
+
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+
+                ft.replace(R.id.frame, userProfile, UserProfile.class.getSimpleName());
+                ft.addToBackStack(null);
+
+                ft.commit();
+            }
+        }if (bundle.getInt("id") == R.id.qr_code){
+            QRcode qRcode = new QRcode();
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+
+            if (fragmentManager != null) {
+
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+
+                ft.replace(R.id.frame, qRcode, QRcode.class.getSimpleName());
                 ft.addToBackStack(null);
 
                 ft.commit();

@@ -61,7 +61,7 @@
                 android:layout_marginTop="8dp"
                 android:text="Bryan More"
                 android:textColor="#fff"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
                 android:layout_gravity="center_horizontal"
                 android:text="Class A"
                 android:textColor="#fafafa"
-                android:textSize="12dp" />
+                android:textSize="12sp" />
         </LinearLayout>
 
         <android.support.v7.widget.CardView
@@ -115,11 +115,13 @@
                     android:layout_gravity="center_vertical"/>
 
                 <LinearLayout
+                    android:id="@+id/profil"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center"
+                    android:onClick="setClick"
                     android:background="@drawable/btn_floating_card"
                     android:clickable="true">
 
@@ -144,13 +146,15 @@
                     android:layout_gravity="center_vertical"/>
 
                 <LinearLayout
+                    android:id="@+id/qr_code"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:background="@drawable/btn_floating_card"
-                    android:clickable="true">
+                    android:clickable="true"
+                    android:onClick="setClick">
 
                     <ImageView
                         android:layout_width="28dp"
@@ -161,7 +165,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="8dp"
-                        android:text="Chat"
+                        android:text="QR Code"
                         android:textColor="#0a0a0a"
                         android:textSize="9dp"/>
                 </LinearLayout>
@@ -206,7 +210,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="8dp"
-                    android:text="Speakers"
+                    android:text="Coupon"
                     android:textColor="#0a0a0a"
                     android:textSize="9dp"/>
             </LinearLayout>
@@ -348,7 +352,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="8dp"
-                    android:text="Meals"
+                    android:text="Promo"
                     android:textColor="#0a0a0a"
                     android:textSize="9dp"/>
             </LinearLayout>
