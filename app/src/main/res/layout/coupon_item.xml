@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:background="@drawable/couponback"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Day 1"
+            android:textSize="25sp"
+            android:textStyle="italic"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Undian"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <TextView
+            android:id="@+id/no_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="130562"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

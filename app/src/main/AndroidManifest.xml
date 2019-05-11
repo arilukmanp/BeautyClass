@@ -13,10 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".View.EditorNotes"
+            android:label="Edit Notes"
+            android:theme="@style/AppNoActionBar"
+            android:parentActivityName=".View.Notes">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".View.Notes" />
+        </activity>
+        <activity android:name=".View.Notes"
+            android:label="Notes"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".View.AgendaTab"
             android:label="@string/title_activity_agenda_tab"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity android:name=".View.NewGallery" />
         <activity android:name=".View.ImageViewer" />
         <activity
@@ -25,7 +45,7 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".LoginActivity" />
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".View.DetailAct"

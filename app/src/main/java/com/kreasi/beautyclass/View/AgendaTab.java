@@ -35,4 +35,25 @@ public class AgendaTab extends AppCompatActivity {
         adapter.addFragment(new Day2(),"Day 2");
         viewPager.setAdapter(adapter);
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.action_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        if (id == R.id.about){
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

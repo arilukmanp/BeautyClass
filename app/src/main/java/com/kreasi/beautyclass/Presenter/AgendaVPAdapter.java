@@ -65,13 +65,13 @@ public class AgendaVPAdapter extends PagerAdapter {
         date.setText(listAgenda.get(position).getDateCourse());
         if (listAgenda.get(position).getStat()== "1"){
             Glide.with(context)
-                    .load(R.drawable.back_make_up)
-                    .apply(new RequestOptions().override(200,200))
+                    .load(R.drawable.backcourse)
+                    .apply(new RequestOptions().override(500,500))
                     .into(cover);
         }else {
             Glide.with(context)
-                    .load(R.drawable.meals)
-                    .apply(new RequestOptions().centerInside())
+                    .load(R.drawable.backmeals)
+                    .apply(new RequestOptions().override(500,500))
                     .into(cover);
         }
         container.addView(view,0);

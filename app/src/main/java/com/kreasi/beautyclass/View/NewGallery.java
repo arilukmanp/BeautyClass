@@ -41,6 +41,7 @@ public class NewGallery extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_gallery);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Gallery");
 
         rvGallery = findViewById(R.id.rv_gallery);
         //

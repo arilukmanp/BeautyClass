@@ -52,7 +52,7 @@ public class Day1 extends Fragment {
 
         vpAgenda = view.findViewById(R.id.AgendaV2);
         vpAgenda.setAdapter(adapter);
-        vpAgenda.setPadding(180,0,180,0);
+        vpAgenda.setPadding(160,0,160,0);
 
         vpAgenda.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override

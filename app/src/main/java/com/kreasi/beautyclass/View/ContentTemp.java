@@ -41,34 +41,6 @@ public class ContentTemp extends AppCompatActivity {
                 ft.commit();
             }
 
-        }if (bundle.getInt("id")== R.id.schedule){
-            Schedule schedule = new Schedule();
-
-            FragmentManager fragmentManager = getSupportFragmentManager();
-
-            if (fragmentManager != null) {
-
-                FragmentTransaction ft = fragmentManager.beginTransaction();
-
-                ft.replace(R.id.frame, schedule, Schedule.class.getSimpleName());
-                ft.addToBackStack(null);
-
-                ft.commit();
-            }
-        }if (bundle.getInt("id") == R.id.gallery){
-            Gallery gallery = new Gallery();
-
-            FragmentManager fragmentManager = getSupportFragmentManager();
-
-            if (fragmentManager != null) {
-
-                FragmentTransaction ft = fragmentManager.beginTransaction();
-
-                ft.replace(R.id.frame, gallery, Gallery.class.getSimpleName());
-                ft.addToBackStack(null);
-
-                ft.commit();
-            }
         }if (bundle.getInt("id") == R.id.profil){
             UserProfile userProfile = new UserProfile();
 
@@ -93,6 +65,20 @@ public class ContentTemp extends AppCompatActivity {
                 FragmentTransaction ft = fragmentManager.beginTransaction();
 
                 ft.replace(R.id.frame, qRcode, QRcode.class.getSimpleName());
+                ft.addToBackStack(null);
+
+                ft.commit();
+            }
+        }if (bundle.getInt("id") == R.id.coupon){
+            CouponView couponView = new CouponView();
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+
+            if (fragmentManager != null) {
+
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+
+                ft.replace(R.id.frame, couponView, CouponView.class.getSimpleName());
                 ft.addToBackStack(null);
 
                 ft.commit();

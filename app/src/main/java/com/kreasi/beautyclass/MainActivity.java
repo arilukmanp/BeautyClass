@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.kreasi.beautyclass.View.AgendaTab;
 import com.kreasi.beautyclass.View.ContentTemp;
 import com.kreasi.beautyclass.View.NewGallery;
+import com.kreasi.beautyclass.View.Notes;
 
 public class MainActivity extends AppCompatActivity {
     ImageView mealsImg;
@@ -49,16 +50,23 @@ public class MainActivity extends AppCompatActivity {
     public void setClick(View view) {
 
         int id = view.getId();
-        if (id==R.id.gallery){
-            Intent moveIntent = new Intent(MainActivity.this, NewGallery.class);
-            startActivity(moveIntent);
-        }if (id==R.id.schedule){
-            Intent moveIntent = new Intent(MainActivity.this, AgendaTab.class);
-            startActivity(moveIntent);
-        }else {
             Intent moveIntent = new Intent(MainActivity.this, ContentTemp.class);
             moveIntent.putExtra("id", id);
             getApplicationContext().startActivity(moveIntent);
+
+    }
+
+    public void setClickAct(View view) {
+        int id = view.getId();
+        if (id==R.id.gallery){
+            Intent gallery = new Intent(MainActivity.this, NewGallery.class);
+            startActivity(gallery);
+        }if (id==R.id.schedule){
+            Intent agenda = new Intent(MainActivity.this, AgendaTab.class);
+            startActivity(agenda);
+        }if (id==R.id.notes){
+            Intent notes = new Intent(MainActivity.this, Notes.class);
+            startActivity(notes);
         }
     }
 }

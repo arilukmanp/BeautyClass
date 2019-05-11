@@ -3,15 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.ContentTemp">
+    tools:context=".View.CouponView">
 
-    <!-- TODO: Update blank fragment layout -->
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_gallery"
-        android:layout_margin="3dp"
+        android:id="@+id/rv_Coupon"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_gallery" />
-
+        tools:listitem="@layout/coupon_item" />
 
 </FrameLayout>
