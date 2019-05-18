@@ -20,4 +20,6 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="title_activity_agenda_tab">AgendaTab</string>
     <string name="hint_ketik">ketik disini</string>
+    <string name="contact_support">Contact Support</string>
+    <string name="nama_file_materi_seminar">Nama File Materi Seminar</string>
 </resources>

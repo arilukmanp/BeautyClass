@@ -5,6 +5,7 @@ import android.support.design.widget.BottomSheetDialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.kreasi.beautyclass.R;
@@ -33,6 +34,13 @@ public class SpeakerFragment extends BottomSheetDialogFragment {
         String arg = getArguments().getString("key");
         nmSpk = view.findViewById(R.id.name_spk);
         nmSpk.setText(arg);
+        ImageView buttClose = view.findViewById(R.id.close_button_spk);
+        buttClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onDestroyView();
+            }
+        });
         return view;
     }
 

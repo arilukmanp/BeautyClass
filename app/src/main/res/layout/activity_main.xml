@@ -33,6 +33,7 @@
                     android:layout_alignParentLeft="true"/>
 
                 <ImageButton
+                    android:id="@+id/transaksi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
@@ -40,7 +41,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="15dp"
                     android:background="@null"
-                    android:src="@drawable/ic_more_vert"
+                    android:src="@drawable/shop"
                     android:layout_alignParentRight="true" />
             </RelativeLayout>
 
@@ -254,6 +255,7 @@
                 android:gravity="center">
 
                 <ImageView
+                    android:id="@+id/contact"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
@@ -262,15 +264,16 @@
                     android:paddingRight="16.5dp"
                     android:paddingBottom="16.5dp"
                     android:src="@drawable/ic_participants"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="setClick"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingTop="8dp"
-                    android:text="Participants"
+                    android:text="Contact"
                     android:textColor="#0a0a0a"
-                    android:textSize="9dp"/>
+                    android:textSize="9dp" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -314,6 +317,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <ImageView
+                    android:id="@+id/download"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/btn_menu"
@@ -322,7 +326,8 @@
                     android:paddingRight="19dp"
                     android:paddingBottom="19dp"
                     android:src="@drawable/ic_download"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:onClick="setClick"/>
 
                 <TextView
                     android:layout_width="wrap_content"

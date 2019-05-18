@@ -111,7 +111,7 @@ public class NewGallery extends AppCompatActivity {
 
     private void showSelectedItem(GalleryModel galleryModel) {
 
-        Dialog dialog = new Dialog(NewGallery.this);
+        final Dialog dialog = new Dialog(NewGallery.this);
         dialog.setContentView(R.layout.pick_foto);
         dialog.setTitle("Preview Image");
         PhotoView photoView = (PhotoView) dialog.findViewById(R.id.imgPreview);
@@ -121,6 +121,13 @@ public class NewGallery extends AppCompatActivity {
                 .apply(new RequestOptions().override(500,500))
                 .into(photoView);
         TextView downButton = dialog.findViewById(R.id.downloadBtn);
+        ImageView closePrev = dialog.findViewById(R.id.prevImgCLS);
+        closePrev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+            }
+        });
         dialog.show();
     }
     @Override

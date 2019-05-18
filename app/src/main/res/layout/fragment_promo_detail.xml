@@ -8,13 +8,19 @@
     tools:context=".View.DetailAct">
 
     <!-- TODO: Update blank fragment layout -->
-    <ImageView
-        android:id="@+id/close_button_spk"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/close_but"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/close_button_promo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/close_but"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            />
+    </RelativeLayout>
 
-        />
     <ScrollView
         android:paddingTop="20dp"
         android:layout_width="match_parent"

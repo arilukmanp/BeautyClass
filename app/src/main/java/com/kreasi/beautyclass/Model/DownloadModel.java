@@ -3,23 +3,34 @@ package com.kreasi.beautyclass.Model;
 import java.util.Date;
 
 public class DownloadModel {
-    private String idDokumen;
+    private int idDokumen;
     private String UrlDokumen;
     private String namaDokumen;
-    private Date dateDokumen;
+    private String dateDokumen;
 
-    public DownloadModel(String idDokumen, String urlDokumen, String namaDokumen, Date dateDokumen) {
+    public int getStat() {
+        return stat;
+    }
+
+    public void setStat(int stat) {
+        this.stat = stat;
+    }
+
+    private  int stat;
+
+    public DownloadModel(int idDokumen, String urlDokumen, String namaDokumen, String dateDokumen, int stak) {
         this.idDokumen = idDokumen;
         this.UrlDokumen = urlDokumen;
         this.namaDokumen = namaDokumen;
         this.dateDokumen = dateDokumen;
+        this.stat = stak;
     }
 
-    public String getIdDokumen() {
+    public int getIdDokumen() {
         return idDokumen;
     }
 
-    public void setIdDokumen(String idDokumen) {
+    public void setIdDokumen(int idDokumen) {
         this.idDokumen = idDokumen;
     }
 
@@ -39,11 +50,11 @@ public class DownloadModel {
         this.namaDokumen = namaDokumen;
     }
 
-    public Date getDateDokumen() {
+    public String getDateDokumen() {
         return dateDokumen;
     }
 
-    public void setDateDokumen(Date dateDokumen) {
+    public void setDateDokumen(String dateDokumen) {
         this.dateDokumen = dateDokumen;
     }
 }

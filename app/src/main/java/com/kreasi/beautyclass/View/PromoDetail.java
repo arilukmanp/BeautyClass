@@ -1,6 +1,8 @@
 package com.kreasi.beautyclass.View;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,6 +28,7 @@ public class PromoDetail extends Fragment {
     TextView desc;
     TextView vendor;
     ImageView img;
+    ImageView cls_but;
 
     public PromoDetail() {
         // Required empty public constructor
@@ -63,8 +66,21 @@ public class PromoDetail extends Fragment {
                         .into(img);
             }
             item++;
+            cls_but = v.findViewById(R.id.close_button_promo);
+            cls_but.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onDestroyView();
+                    getActivity().finish();
+                }
+            });
         }
         return v;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 
     @Override

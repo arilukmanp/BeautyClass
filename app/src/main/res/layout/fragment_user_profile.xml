@@ -212,14 +212,15 @@
         <View
             android:id="@+id/border"
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="1dp"
             android:layout_marginTop="350dp"
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
-            android:background="@color/colorLoginDark"
+            android:background="@color/colorPrimaryDark"
             android:layout_gravity="center_vertical"/>
 
         <android.support.v7.widget.CardView
+            android:id="@+id/motto"
             android:layout_width="330dp"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -240,7 +241,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tentangku"
+                        android:text="Motto"
                         android:textStyle="bold"
                         android:textColor="#000"
                         android:textSize="18sp"/>
@@ -282,7 +283,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:paddingTop="2dp"
-                                android:text="@string/lorem1"
+                                android:text="@string/titledesc"
                                 android:textColor="#6F6B6B"
                                 android:textSize="11sp"/>
                         </LinearLayout>
@@ -291,6 +292,20 @@
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/motto"
+            android:gravity="center"
+            android:text="Logout"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/btn_login"/>
     </RelativeLayout>
 
 </LinearLayout>

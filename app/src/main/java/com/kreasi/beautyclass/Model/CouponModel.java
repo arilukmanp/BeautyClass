@@ -5,6 +5,16 @@ public class CouponModel {
     private int noKupon;
     private int idUser;
 
+    public int getDay() {
+        return day;
+    }
+
+    public void setDay(int day) {
+        this.day = day;
+    }
+
+    private int day;
+
     public CouponModel() {
         this.idKupon=getIdKupon();
         this.noKupon=getNoKupon();

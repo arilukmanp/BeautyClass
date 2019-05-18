@@ -83,6 +83,35 @@ public class ContentTemp extends AppCompatActivity {
 
                 ft.commit();
             }
+        }if (bundle.getInt("id") == R.id.contact){
+            Contact contact = new Contact();
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+
+            if (fragmentManager != null) {
+
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+
+                ft.replace(R.id.frame, contact, Contact.class.getSimpleName());
+                ft.addToBackStack(null);
+
+                ft.commit();
+            }
+        }
+        if (bundle.getInt("id") == R.id.download){
+            DownloadFile downloadFile = new DownloadFile();
+
+            FragmentManager fragmentManager = getSupportFragmentManager();
+
+            if (fragmentManager != null) {
+
+                FragmentTransaction ft = fragmentManager.beginTransaction();
+
+                ft.replace(R.id.frame, downloadFile, DownloadFile.class.getSimpleName());
+                ft.addToBackStack(null);
+
+                ft.commit();
+            }
         }
     }
 
