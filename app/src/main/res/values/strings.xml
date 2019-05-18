@@ -22,4 +22,5 @@
     <string name="hint_ketik">ketik disini</string>
     <string name="contact_support">Contact Support</string>
     <string name="nama_file_materi_seminar">Nama File Materi Seminar</string>
+    <string name="write_file">This app needs access to your file storage so that it can write files.</string>
 </resources>
