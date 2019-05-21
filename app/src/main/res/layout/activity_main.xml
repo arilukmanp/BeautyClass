@@ -163,7 +163,7 @@
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:src="@drawable/ic_chat"/>
+                        android:src="@drawable/ic_qrcode"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -208,7 +208,7 @@
                     android:paddingTop="15dp"
                     android:paddingRight="15dp"
                     android:paddingBottom="15dp"
-                    android:src="@drawable/ic_speakers"
+                    android:src="@drawable/ic_coupon"
                     android:clickable="true"
                     android:onClick="setClick"/>
 
@@ -353,7 +353,7 @@
                     android:paddingTop="17dp"
                     android:paddingRight="17dp"
                     android:paddingBottom="17dp"
-                    android:src="@drawable/ic_meals"
+                    android:src="@drawable/ic_promotion"
                     android:clickable="true"
                     android:onClick="setClick"
                     />
